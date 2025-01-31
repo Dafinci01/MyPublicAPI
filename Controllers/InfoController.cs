@@ -12,10 +12,7 @@ namespace MyPublicAPI.Controllers
         {
             var response = new
             {
-                Email = "odelanadavidp20@gmail.com",  // Replace with your email
-                Timestamp = DateTime.UtcNow.ToString("o"),  // ISO 8601 format
-                GitHubUrl = "https://github.com/Dafinci01/MyPublicAPI"  // Your GitHub repo
-            };
+                "email" = "odelanadavidp20@gmail.com","current_datetime" = DateTime.UtcNow.ToString("o"), "gitHub_Url" = "https://github.com/Dafinci01/MyPublicAPI"  // Your GitHub repo};
 
             return Ok(response);
         }
