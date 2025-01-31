@@ -13,11 +13,11 @@ namespace MyPublicAPI.Controllers
             var response = new
             {
                 email = "odelanadavidp20@gmail.com",
-                current_datetime = DateTime.UtcNow.ToString("o"),
+                current_datetime = DateTime.UtcNow.ToString("o"),  // Corrected format string
                 github_url = "https://github.com/Dafinci01/MyPublicAPI"
             };
 
-            return Ok(response);
+            return Ok(response);  // This line needs to be properly closed with a semicolon
         }
     }
 }
