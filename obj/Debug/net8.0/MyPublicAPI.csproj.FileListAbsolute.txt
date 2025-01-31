@@ -31,3 +31,4 @@
 /root/MyPublicAPI/obj/Debug/net8.0/MyPublicAPI.pdb
 /root/MyPublicAPI/obj/Debug/net8.0/MyPublicAPI.genruntimeconfig.cache
 /root/MyPublicAPI/obj/Debug/net8.0/ref/MyPublicAPI.dll
+/root/MyPublicAPI/obj/Debug/net8.0/MyPublicAPI.sourcelink.json

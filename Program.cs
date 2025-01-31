@@ -38,6 +38,8 @@ if (app.Environment.IsDevelopment())
 
 // Use CORS middleware before routing
 app.UseCors("AllowAll");
+
+// Use routing and authorization middleware
 app.UseRouting();
 app.UseAuthorization();
 
@@ -45,33 +47,4 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -4,10 +4,9 @@ using System;
 namespace MyPublicAPI.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("/")]  // Set this to root ("/") instead of "api/[controller]"
     public class InfoController : ControllerBase
     {
-        // This endpoint will return the desired info
         [HttpGet]
         public IActionResult GetInfo()
         {
@@ -15,10 +14,10 @@ namespace MyPublicAPI.Controllers
             {
                 Email = "odelanadavidp20@gmail.com",  // Replace with your email
                 Timestamp = DateTime.UtcNow.ToString("o"),  // ISO 8601 format
-                GitHubUrl = "https://github.com/Dafinci01/MyPublicAPI"  // Replace with your GitHub repo
+                GitHubUrl = "https://github.com/Dafinci01/MyPublicAPI"  // Your GitHub repo
             };
 
-            return Ok(response);  // Return the response as JSON
+            return Ok(response);
         }
     }
 }
